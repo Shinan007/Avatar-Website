@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url("/assets/6361475.jpg"); */
+    background: linear-gradient(248.59deg,#105BA5 0%, #81A4CD 28.53%,#133875 28.53%,#3E7CB1 75.32%);
+    background-size:100%;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Navbar */
+header{
+     position: fixed;
+    width: 97%;
+    top: 0px; 
+    z-index: 2; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 2% 10px 2%;
+}
+.heading{
+    margin-right: auto;
+    text-decoration: none;
+    font-size:2.5rem;
+    color: aliceblue;
+    margin-top: 15px;
+    font-weight: 900;
+    font-family: 'Papyrus';
+}
+ol{
+    list-style: none;
+    margin: 10px 0px auto;
+    padding:0px;
+}
+li{
+    display: inline-block;
+    margin: 0px 20px auto;
+}
+li a{
+    text-decoration: none;
+    transition: all .2s ease 0s;
+}
+li,a,label,button{
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 1rem;
+
+}
+li input{
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    margin-right: 10px;
+    padding: 0.3rem 0.6rem;
+}
+li input[type="search"]{
+    font-weight: 400  ;
+    color: aliceblue;
+    font-size: 1rem;
+}
+#search{
+    display: none;
+}
+header button{
+    background: transparent;
+    border: 2px solid aliceblue;
+    color:aliceblue ;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    transition: all .55s ease 0s;
+}
+li a:hover{
+    transform: translateY(30px);
+    border-bottom: 2px solid white;
+
+}
+header button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+/* Note  Page 1*/
+.intro{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* position:relative; */
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+/* Image Page 1 */
+.hero{
+    position: relative;
+    left: 10rem;
+}
+section .avatar{
+    position: relative;
+    width: 29vw;
+    top: 2rem;
+    left: 9.5rem;
+}
+section .avatar img{
+    width: 100%;
+    left: 5rem;
+}
+/* Text Page 1s */
+
+h5{
+    color: aliceblue;
+    margin: 1rem 0;
+}
+h4{
+    color: aliceblue;
+    margin: 1rem 0;
+}
+h1{
+    color: aliceblue;
+    font-family: 'Permanent Marker',cursive;
+    font-weight: 1000;
+    font-size: 50px;
+}
+p{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+/* Buttons  Page 1*/
+
+.hero a{
+    margin: 10px;
+}
+/* background-color: #015d7c; */
+.hero .b1{
+    color:rgb(250, 250, 250);
+    background-color: rgba(0, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 10px 50px; 
+    border: 2px solid rgba(0, 255, 255, 0.7);
+    transition: all .55s ease 0s;
+}
+.hero .b2{
+    background: transparent;
+    border: 2px solid aliceblue;
+    color:aliceblue ;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    transition: all .55s ease 0s;
+}
+.hero .b1:hover{
+    background-color: transparent;
+    transform: translateX(5px);
+    color: rgba(0, 255, 255, 0.851);
+}
+.hero .b2:hover{
+    transform: translateX(5px);
+}
+/* Page 2nd */
+
+.info{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);
+    position:relative;
+    padding: 5rem 0;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    gap:1rem;
+    padding: 0 5%;
+}
+/* Image 2nd */
+.photo{
+    width:64%;
+}
+
+.photo img{
+    width:100%;
+    height:400px;
+    max-width: 400px;
+    object-fit: cover;
+    border: 7px solid #133875;
+    box-shadow: 0 0 20px black;
+    border-radius: 50%;
+    transition: all 0.5s ease 0s;
+}
+.photo img:hover{
+    box-shadow: 0 0 30px black;
+    transform: translateY(-8px);
+}
+/* All about Text and in last Button*/
+section .about-text p{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+}
+section .about-text p span{
+    font-size: 13px;
+    margin-left: 5px;
+    color: #6a6f75;
+}
+.texts h2{
+    font-size: 40px;
+    color: aliceblue;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+span{
+    color: rgba(0, 255, 255, 0.9);
+}
+.text a{
+    color:rgba(0, 255, 255, 0.9);
+}
+.texts a button{
+    color: rgba(0, 0, 0, 0.788);
+    background-color:rgba(0, 255, 255, 0.851);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px 40px;
+    border: 2px solid rgba(0, 255, 255, 0.851);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.851);
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: all 0.5s ease 0s;
+}
+.texts a button:hover{
+    background: transparent;
+    color: rgba(0, 255, 255, 0.851);
+    transform: translateX(8px);
+}
+/* Movies List Section */
+.movies{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);
+}
+.movies h1{
+    text-align: center;
+    margin: 0 2rem 3rem 2rem;
+    font-size: 5rem;
+}
+.movies .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.movies .card1{
+    width: 20vw;
+    height: 45vh;
+    border-radius: 20px;
+    margin: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease 0s;
+}
+.movies .card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 'opacity' .2s ease-out;
+}
+/* Content */
+.content{
+    transition: all 0.5s ease 0s;
+    position: relative;
+    inset: auto 0 150px 0;
+    z-index: 1;
+    opacity: 0;
+    margin-left: 20px;
+}
+ .movies .card1 h2{
+    font-family: 'Papyrus';
+    color: rgba(0, 255, 255, 0.9);
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+}
+.movies .card1 p{
+    color: aliceblue;
+    font-size: 15px;
+}
+.movies .card1:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 20px rgba(32, 32, 32,0.8);
+}
+.movies .card1:hover .content{
+    opacity: 1;
+}
+.movies .card1:hover img{
+    opacity: 1;
+}
+/* Contact info */
+.contact{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);
+}
+.flex{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact form{
+    height: 75%;
+    width: 55%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.contact h1{
+    text-align: center;
+    /* margin:px 0 0 0; */
+    /* padding: ; */
+}
+.contact span{
+    color:rgba(0, 255, 255, 0.851);
+}
+.contact form .inputs{
+    margin: 10px;
+    padding: 18px 0 20px 25px;
+    border-radius: 10px;
+    background-color:#09467b;
+    border:none;
+    color: antiquewhite;
+    box-shadow: 0 0 10px #01ecf8 ;
+}
+.contact .inputs::placeholder{
+    font-size: 15px;
+    color: aliceblue;
+}
+.contact .button{
+    margin: 10px;
+    width: 22%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #09467b;
+    font-size: 20px;
+    color: aliceblue;
+    background-color:#09467b;
+    box-shadow: 0 0 10px #01ecf8 ;
+    transition: all 0.5s ease 0s;
+}
+.contact .button:hover{
+    transform: translateX(15px);
+    background-color: transparent;
+    color: #09467b;
+}
+footer{
+    height: 10vh;
+    background-color: #105BA5;
+}
+footer .feet{
+    padding: 20px;
+}
