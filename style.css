@@ -86,23 +86,20 @@ header button:hover{
 /* Note  Page 1*/
 .intro{
     width: 100%;
-    height: 100%;
-    display: grid;
-    /* position:relative; */
-    grid-template-columns: repeat(2,1fr);
+    height: 90vh;
+    display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 /* Image Page 1 */
 .hero{
-    position: relative;
-    left: 10rem;
+    width: 35%;
 }
 section .avatar{
     position: relative;
-    width: 29vw;
-    top: 2rem;
-    left: 9.5rem;
+    bottom: 0px;
+    width: 400px;
 }
 section .avatar img{
     width: 100%;
@@ -183,7 +180,7 @@ p{
 
 .photo img{
     width:100%;
-    height:400px;
+    max-height:400px;
     max-width: 400px;
     object-fit: cover;
     border: 7px solid #133875;
@@ -255,7 +252,7 @@ span{
     align-content: space-evenly;
 }
 .movies .card1{
-    width: 20vw;
+    width: 300px;
     height: 45vh;
     border-radius: 20px;
     margin: 50px;
@@ -304,7 +301,7 @@ span{
 /* Contact info */
 .contact{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);
 }
 .flex{
@@ -361,9 +358,73 @@ span{
     color: #09467b;
 }
 footer{
-    height: 10vh;
+    height: 5vh;
     background-color: #105BA5;
-}
-footer .feet{
     padding: 20px;
+}
+/* Media Query */
+@media(max-width:790px){
+    ol{
+        display: none;
+    }
+}
+@media(max-width:525px){
+    body{
+        background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);   
+    }
+    .intro{
+        height: 100vh;
+        justify-content:start; 
+    }
+    .hero{
+        padding: 30px 0px 0px 30px;
+        width: 85%;
+    }
+    section .avatar{
+        width: 300px;
+        position: relative;
+        bottom: 70px;
+    }
+    /* Page 2 Info */
+    .info{
+        height: 100vh;
+        padding: 5rem 0 0 0;
+    }
+    .info-container{
+        grid-template-columns: 2fr;
+        padding: 0 10%;
+        gap: 2rem;
+    }
+    .photo{
+        width: 100%;
+        text-align: center;
+    }
+    .photo img{
+        width: 300px;
+        height: 300px;
+        border: 7px solid #133875;
+        box-shadow: 0 0 20px black;
+        border-radius: 50%;
+        transition: all 0.5s ease 0s;
+    }
+    .texts h2{
+        font-size: 30px;
+    }
+    /* Movies */
+    .movies
+    {
+        background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);   
+    }
+    .movies h1{
+        font-size: 4rem;
+        margin: 0px;
+    }
+    /* Contact Me */
+    .contact form{
+        width: 80%;
+    }
+    .contact .button{
+        width: 50%;
+    }
+
 }
