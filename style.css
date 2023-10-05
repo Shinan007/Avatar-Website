@@ -127,6 +127,9 @@ p{
 }
 /* Buttons  Page 1*/
 
+#butt{
+    display: flex;
+}
 .hero a{
     margin: 10px;
 }
@@ -160,7 +163,7 @@ p{
 
 .info{
     width: 100%;
-    height: 50%;
+    height: 100%;
     background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);
     position:relative;
     padding: 5rem 0;
@@ -363,18 +366,23 @@ footer{
     padding: 20px;
 }
 /* Media Query */
-@media(max-width:790px){
-    ol{
-        display: none;
-    }
-}
-@media(max-width:525px){
+
+@media(max-width:576px){
     body{
         background: linear-gradient(245.59deg,#133875 28.53%,#3E7CB1 75.32%);   
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    header button{
+        font-size: .7rem;
     }
     .intro{
         height: 1gi0vh;
         justify-content:start; 
+    }
+    ol{
+        display: none;
     }
     .hero{
         padding: 30px 0px 0px 30px;
@@ -427,4 +435,43 @@ footer{
         width: 50%;
     }
 
+}
+@media(max-width:400px){
+    .info{
+        height: 90vh;
+        padding: 5rem 0 0 0;
+    }
+    .hero{
+        font-size:x-small
+    }
+    .photo{
+        width: 100%;
+        text-align: center;
+    }
+    .photo img{
+        width: 200px;
+        height: 200px;
+        border: 7px solid #133875;
+        box-shadow: 0 0 20px black;
+        border-radius: 50%;
+        transition: all 0.5s ease 0s;
+    }
+    section .about-text p{
+        font-size: 15px;
+
+    }
+    section .about-text p span{
+        line-height: 10px;
+        font-size: 13px;
+    }
+    .texts h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .texts a button{
+        font-weight: 500;
+        font-size: 15px;
+        padding: 15px 40px;
+        transition: all 0.5s ease 0s;
+    }
 }
