@@ -63,7 +63,3 @@ If you have any questions or would like to get in touch, feel free to contact me
 
 - Phone: 9634879999
 - LinkedIn: [www.linkedin.com/in/sharad-chauhan-24a62126a](www.linkedin.com/in/sharad-chauhan-24a62126a)
-
----
-
-You can use this README file as a starting point for your project on GitHub. Don't forget to replace "your-username" with your actual GitHub username in the setup and contributing sections. Also, make sure to include your actual screenshot images (replace "screenshot1.png," "screenshot2.png," etc.) and update any URLs as needed.
