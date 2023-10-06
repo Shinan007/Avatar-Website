@@ -7,7 +7,7 @@
 
 ## Description
 
-The AVATAR-Website project is a personal project created to refine front-end development skills. It showcases a website with an Avatar-themed design, serving as a portfolio piece to demonstrate your web development capabilities.
+The AVATAR-Website project is a personal project created to refine front-end development skills. It showcases a website with an Avatar-themed design, serving as a portfolio piece to demonstrate my web development capabilities.
 
 ## Technologies Used
 
@@ -32,7 +32,7 @@ To view this website locally:
 
 ## Usage
 
-The AVATAR-Website is a static website that showcases an Avatar-themed design. Users can explore the website to appreciate the design and your front-end development skills.
+The AVATAR-Website is a responsive website that showcases an Avatar-themed design.
 
 ## Contributing
 
