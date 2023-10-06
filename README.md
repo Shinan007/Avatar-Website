@@ -19,13 +19,16 @@ The AVATAR-Website project is a personal project created to refine front-end dev
 To view this website locally:
 
 1. Clone the repository to your local machine:
-
+   ```bash
    git clone https://github.com/Shinan007/avatar-website.git
-
+   ```
+   
 2. Navigate to the project folder:
 
+   ```bash
    cd avatar-website
-
+   ```
+   
 3. Open the `index.html` file in your favorite code editor (e.g., Visual Studio Code).
 
 4. You can preview the website by opening `index.html` in your web browser.
